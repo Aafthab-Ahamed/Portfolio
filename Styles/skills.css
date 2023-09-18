@@ -1,0 +1,131 @@
+.skills {
+  min-width: 100vh;
+  padding: 10px 8%;
+  position: relative;
+}
+
+.skills .skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 150px;
+}
+
+.wave .shape-fill {
+    fill: var(--lightPrimary);
+}
+
+.skills .heading {
+  font-size: 3rem;
+  text-align: center;
+  margin: 10rem 0 5rem 0;
+}
+
+.skills-row .skills-cloumn {
+  flex: 1 1 35rem;
+}
+
+.skills-cloumn .tittle {
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+}
+
+.skills-box .skills-content {
+  position: relative;
+  border: 0.2rem solid var(--secondary);
+  border-radius: 0.6rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.skills-box .skills-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.07);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.skills-box .skills-content:hover::before {
+  width: 100%;
+}
+
+.skills-content .progress {
+  padding: 1rem 0;
+}
+
+.skills-content .progress h3 {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-content .progress h3 span {
+  color: white;
+}
+
+.skills-content .progress .bar {
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  border: 0.2rem solid var(--secondary);
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.skills-content .progress .bar span {
+  display: block;
+  height: 100%;
+  border-radius: 0.3rem;
+  background-color: var(--secondary);
+}
+
+.skills-cloumn:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
+  width: 87%;
+}
+
+.skills-cloumn:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
+  width: 79%;
+}
+
+.skills-cloumn:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
+  width: 49%;
+}
+
+.skills-cloumn:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
+  width: 47%;
+}
+
+.skills-cloumn:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+  width: 25%;
+}
+
+.skills-cloumn:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
+  width: 92%;
+}
+
+.skills-cloumn:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
+  width: 89%;
+}
+
+.skills-cloumn:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+  width: 21%;
+}

@@ -1,0 +1,77 @@
+.contact {
+  min-height: 100vh;
+  position: relative;
+}
+
+.contact .wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: 100rem;
+  transform: rotate(180deg);
+}
+
+.contact .wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.contact .wave .shape-fill {
+  fill: var(--lightPrimary);
+}
+
+.contact .spacer{
+  min-height: 1rem;
+  margin-bottom: 10rem;
+}
+
+.contact .heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.4rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+  box-shadow: 0 0.1rem 0.5rem var(--shadowColor);
+}
+
+.contact form .input-box input {
+  width: 50%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact .button{
+  margin-top: 2rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
